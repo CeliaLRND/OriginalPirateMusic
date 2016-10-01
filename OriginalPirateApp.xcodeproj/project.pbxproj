@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		042557451D9B878800EED719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042557441D9B878800EED719 /* AppDelegate.swift */; };
-		042557471D9B878800EED719 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042557461D9B878800EED719 /* ViewController.swift */; };
+		042557471D9B878800EED719 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042557461D9B878800EED719 /* MainVC.swift */; };
 		0425574A1D9B878800EED719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042557481D9B878800EED719 /* Main.storyboard */; };
 		0425574C1D9B878800EED719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0425574B1D9B878800EED719 /* Assets.xcassets */; };
 		0425574F1D9B878800EED719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0425574D1D9B878800EED719 /* LaunchScreen.storyboard */; };
+		0425575A1D9B8EB500EED719 /* WantedPirates.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 042557591D9B8EB500EED719 /* WantedPirates.ttf */; };
+		0425575D1D9B905200EED719 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425575C1D9B905200EED719 /* VideoVC.swift */; };
+		0425575F1D9B91C600EED719 /* OPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425575E1D9B91C600EED719 /* OPCell.swift */; };
+		042557611D9B935C00EED719 /* OPFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042557601D9B935C00EED719 /* OPFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		042557411D9B878800EED719 /* OriginalPirateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OriginalPirateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042557441D9B878800EED719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		042557461D9B878800EED719 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		042557461D9B878800EED719 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		042557491D9B878800EED719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0425574B1D9B878800EED719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0425574E1D9B878800EED719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042557501D9B878800EED719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042557591D9B8EB500EED719 /* WantedPirates.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = WantedPirates.ttf; path = ../../../../../Downloads/WantedPirates.ttf; sourceTree = "<group>"; };
+		0425575C1D9B905200EED719 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		0425575E1D9B91C600EED719 /* OPCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPCell.swift; sourceTree = "<group>"; };
+		042557601D9B935C00EED719 /* OPFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		042557431D9B878800EED719 /* OriginalPirateApp */ = {
 			isa = PBXGroup;
 			children = (
+				042557561D9B87E300EED719 /* Controller */,
+				042557581D9B880500EED719 /* Model */,
+				042557571D9B87F400EED719 /* View */,
+				0425575B1D9B8EC600EED719 /* Files */,
+				0425574D1D9B878800EED719 /* LaunchScreen.storyboard */,
 				042557441D9B878800EED719 /* AppDelegate.swift */,
-				042557461D9B878800EED719 /* ViewController.swift */,
 				042557481D9B878800EED719 /* Main.storyboard */,
 				0425574B1D9B878800EED719 /* Assets.xcassets */,
-				0425574D1D9B878800EED719 /* LaunchScreen.storyboard */,
 				042557501D9B878800EED719 /* Info.plist */,
 			);
 			path = OriginalPirateApp;
+			sourceTree = "<group>";
+		};
+		042557561D9B87E300EED719 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042557461D9B878800EED719 /* MainVC.swift */,
+				0425575C1D9B905200EED719 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		042557571D9B87F400EED719 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0425575E1D9B91C600EED719 /* OPCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		042557581D9B880500EED719 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042557601D9B935C00EED719 /* OPFile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0425575B1D9B8EC600EED719 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				042557591D9B8EB500EED719 /* WantedPirates.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0425575A1D9B8EB500EED719 /* WantedPirates.ttf in Resources */,
 				0425574F1D9B878800EED719 /* LaunchScreen.storyboard in Resources */,
 				0425574C1D9B878800EED719 /* Assets.xcassets in Resources */,
 				0425574A1D9B878800EED719 /* Main.storyboard in Resources */,
@@ -136,7 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042557471D9B878800EED719 /* ViewController.swift in Sources */,
+				042557611D9B935C00EED719 /* OPFile.swift in Sources */,
+				0425575D1D9B905200EED719 /* VideoVC.swift in Sources */,
+				042557471D9B878800EED719 /* MainVC.swift in Sources */,
+				0425575F1D9B91C600EED719 /* OPCell.swift in Sources */,
 				042557451D9B878800EED719 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

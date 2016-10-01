@@ -10,10 +10,35 @@ import UIKit
 
 class VideoVC: UIViewController {
 
+    
+    
+    
+
+    
+    
+    
+    @IBOutlet weak var titleLbl: UILabel!
+    
+    
+    
+    @IBOutlet weak var webview: UIWebView!
+    
+    
+    private var _originalPirate: OPFile!
+    
+    var originalPirate: OPFile {
+        get {
+            return _originalPirate
+        } set {
+            _originalPirate = newValue
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLbl.text = originalPirate.videoTitle
+        webview.loadHTMLString(originalPirate.videoURL, baseURL: nil)
     }
 
     override func didReceiveMemoryWarning() {
